@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link for bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Google Fonts link -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate:400,700" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand|Rubik');
+    </style>
+
+    <title>Web Dev Pro Kalpesh</title>
+
+
+
+    <style>
+
+        /* Header & Body CSS */
+        body {
+            display: block;
+            margin: auto;
+            background: url("abg.jpg") no-repeat fixed;
+            background-size: cover;
+            /* width: 980px; */
+            font-family: 'Rubik', sans-serif;
+
+            /* remove border before deployment. used as a visual during build */
+            /* border: solid yellow 2px; */
+            color: whitesmoke;
+        }
+
+        h2 {
+
+            margin-left: 15px;
+
+        }
+
+
+        .aboutMe {
+            margin: auto;
+
+            font-family: 'Syncopate', sans-serif;
+            font-size: 700;
+            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .card-text {
+
+            text-align: center;
+
+        }
+
+        .navbar-light .navbar-brand {
+            color: slategrey;
+            font-size: 2rem;
+        }
+
+        .navbar-brand {
+            font-family: 'Pacifico', cursive;
+            color: slategray;
+            text-align: left;
+            margin-right: 50%;
+        }
+
+        .collapse navbar-collapse {
+            font-family: 'Pacifico', cursive;
+
+        }
+
+
+        #main-container {
+            display: block;
+            margin: auto;
+            /* padding-top: 130px;
+            min-height: calc(100vh - 70px); */
+        }
+
+        .main-section {
+
+            /* float: left; */
+            display: blocK;
+            margin: auto;
+            width: 100%;
+            max-width: 960px;
+            padding: 30px;
+
+        }
+
+        /* portfolio page */
+
+        .work {
+            position: relative;
+            float: left;
+            width: 274px;
+            margin: 20px 0 25px;
+            overflow: auto;
+        }
+
+        .work:nth-child(even) {
+            margin-right: 40px;
+        }
+
+        .work img {
+            width: 100%;
+            border: 0 none;
+            opacity: 0.8;
+        }
+
+        .work h3 {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 0;
+            font-weight: 300;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+            background: gray;
+            border-bottom: 0;
+        }
+
+        .auth-image {
+            float: left;
+            width: 200px;
+            height: auto;
+            margin-top: 10px;
+            margin-right: 25px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            padding: 30px 0;
+            clear: both;
+            font-size: 12px;
+            color: #fff;
+            color: #ccc;
+            text-align: center;
+            background: #666;
+            border-top: 8px solid #93d;
+            height: 50px;
+            width: 100%;
+        }
+
+        a {
+            color: Red;
+        }
+
+        .nav-link {
+            color: slategray;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Building header with name in navigation bar -->
+    <header>
+
+        <!-- Bootstrap NavBar Code -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Kal Patel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Div class for collapse navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Navigation Links -->
+                <ul class="nav justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Portfolio Container -->
+    <div id="main-container" class="container-fluid">
+        <section class="main-section">
+            <h1>Portfolio</h1>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="work">
+                        <img src="technics-q-c-640-480-1.jpg" alt="Word Guess">
+
+                        <h3>Word Guess</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="work">
+                        <img src="technics-q-c-640-480-2.jpg" alt="RPG Game">
+
+                        <h3>RPG Game</h3>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="work">
+                        <img src="technics-q-c-640-480-5.jpg" alt="Trivia Game">
+
+                        <h3>Trivia Game</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="work">
+                        <img src="technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+
+                        <h3>Rutgers Info Widget</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="work">
+                        <img src="technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+
+                        <h3>Rock Paper Scissors</h3>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="work">
+                        <img src="abg.jpg" alt="ABG">
+
+                        <h3>ABG</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+            <div class="container">
+              Copyright &copy; 
+            </div>
+          </footer>
+
+
+</body>
+
+</html>
